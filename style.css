@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.Home{
+  
+    background-size: contain ;
+    overflow: visible;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+ nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+     
+    color: #03346E;
+    margin: 0px 40px;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 2;
+    
+    
+
+}
+
+nav ul li a::before{
+content: '';
+width: 100%;
+height: 0px;
+background: #D8D2C2;
+padding: 0px 10px ;
+position: absolute;
+left: -10px;
+top: -50px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+z-index: -1;
+transition: height 0.5s;
+}
+
+nav ul li a:hover::before{
+    content: '';
+    width: 100%;
+    height: 100px;
+    color: #D8D2C2;
+    padding: 0px 10px ;
+    position: absolute;
+    left: -10px;
+    top: -50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+    }
+   
+    nav ul li a:hover{
+        font-weight: 600;
+    }
+
+nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(204, 180, 154); 
+    padding-bottom: 10px;
+
+    
+}
+
+nav ul{
+    display: flex;
+    width: auto;
+    margin-right: 125px;
+   
+}
+
+
+
+.logo{
+   height: 70px;
+    margin-left: 100px;
+    border-radius: 50%;
+    border: solid;
+    
+}
+
+.main{
+margin-top: 75px;
+margin-left:  15px;
+margin-right:  15px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+height: 500px;
+position: relative;
+border-radius: 20px;
+z-index: 2;
+}
+
+
+
+.Alfi{
+    height: 190px;
+    border-radius: 50%;
+}
+
+.main div h1{
+    font-size: 35px;
+    color: #03346E;
+    letter-spacing: 3px;
+}
+
+.main div h2{
+    color: #EEEEEE;
+    color: #191919;
+    margin: 5px 0px;
+    letter-spacing: 3px;
+    font-size:25px;
+}
+
+.main div p{
+    padding-top: 12px;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.btn1{
+    margin-top: 20px; 
+    margin-right:30px;
+    width: 150px;
+    height: 40px;
+    background:  #160040 ;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    
+}
+
+.btn1 a{
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 18px;
+     
+    color: #EEEEEE;
+   
+    font-weight:200;
+    font-family: sans-serif;
+    transition: 0.5s;
+    
+}
+
+.btn{
+    margin-top: 20px; 
+    margin-right:30px;
+    width: 150px;
+    height: 40px;
+    background:  #EEEEEE  ;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    
+}
+
+.btn a{
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #160040;
+    font-weight:200;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: #D8D2C2;
+    transition: 0.5;
+    border-top-right-radius: 20px;
+}
+
+.btn1:hover{
+    border-top-right-radius: 20px;
+    background: #D8D2C2;
+}
+
+.btn1 a:hover{
+    color: #160040;
+}
+
+
+
+
